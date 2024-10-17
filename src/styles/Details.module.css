@@ -1,0 +1,99 @@
+.detail {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0;
+}
+
+.detail a {
+  text-decoration: underline;
+}
+
+.detail .content {
+  width: 800px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+.detail .content img {
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid black;
+}
+
+.detail .content .wrap section:nth-of-type(1) {
+  border-right: 1px solid black;
+}
+
+.detail .content .name {
+  font-size: 2.5rem;
+  padding: 1.5rem;
+  border-bottom: 1px solid black;
+}
+
+.detail .content .links {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-bottom: 1px solid black;
+}
+
+.detail .content .link {
+  padding: 1rem 1.5rem;
+  border-right: 1px solid black;
+}
+
+.detail .content .link:last-of-type {
+  border-right: none;
+}
+
+.detail .content .description {
+  padding: 1rem 1.5rem;
+  line-height: 1.3;
+  border-bottom: 1px solid black;
+}
+
+.detail .content .modified {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid black;
+}
+
+.detail .content .article {
+  padding: 1.5rem;
+}
+
+.detail .content .article > p {
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+.detail .content .article ul {
+  margin-left: 2rem;
+}
+
+.detail .content .article li {
+  margin-bottom: 1em;
+  position: relative;
+  padding-left: 1em;
+}
+
+.detail .content .article li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.35em;
+  width: 0.35em;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+
+@media screen and (max-width: 1000px) {
+  .detail {
+    padding: 4rem 4%;
+  }
+
+  .detail .content {
+    width: 100%;
+  }
+}
